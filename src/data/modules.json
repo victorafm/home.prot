@@ -1,0 +1,145 @@
+[
+  {
+    "id": "home",
+    "nome": "Home",
+    "icon": "home",
+    "opcoes": []
+  },
+  {
+    "id": "comercial",
+    "nome": "Comercial",
+    "icon": "shopping",
+    "opcoes": [
+      { "id": "cadastro-lead", "nome": "Cadastro de Lead", "icon": "users" },
+      { "id": "cadastro-campanha", "nome": "Cadastro de Campanha", "icon": "activity" },
+      { "id": "cadastro-vendedor", "nome": "Cadastro de Vendedor", "icon": "users" },
+      { "id": "cadastro-meta", "nome": "Cadastro de Meta", "icon": "chart" },
+      { "id": "cadastro-ponto-venda", "nome": "Cadastro de Ponto de Venda", "icon": "file" },
+      { "id": "workflow-vendas", "nome": "Workflow de Vendas", "icon": "activity" },
+      { "id": "cadastro-portabilidade", "nome": "Cadastro de Portabilidade", "icon": "file" },
+      { "id": "painel-vendas", "nome": "Painel de Vendas", "icon": "chart" },
+      { "id": "painel-acomp-vendedores", "nome": "Painel de Acompanhamento de Vendedores", "icon": "chart" },
+      { "id": "consulta-viabilidade", "nome": "Consulta de Viabilidade", "icon": "file" },
+      { "id": "agenda-vendedor", "nome": "Agenda Vendedor/Supervisor", "icon": "activity" },
+      { "id": "painel-acomp-etapas", "nome": "Painel de Acompanhamento de Etapas de Venda", "icon": "chart" },
+      { "id": "alteracao-plano-contrato", "nome": "Alteração de Plano no Contrato", "icon": "file" },
+      { "id": "troca-titularidade", "nome": "Troca de Titularidade", "icon": "file" }
+    ]
+  },
+  {
+    "id": "atendimento",
+    "nome": "Atendimento",
+    "icon": "headset",
+    "opcoes": [
+      { "id": "listagem-atendimentos", "nome": "Listagem de Atendimentos", "icon": "file" },
+      { "id": "acomp-agentes", "nome": "Acompanhamento dos Agentes", "icon": "users" },
+      { "id": "acomp-atendimentos", "nome": "Acompanhamento dos Atendimentos", "icon": "activity" },
+      { "id": "painel-conversas", "nome": "Painel de Conversas Atendimento", "icon": "activity" }
+    ]
+  },
+  {
+    "id": "gestao-tecnicos",
+    "nome": "Gestão de Técnicos",
+    "icon": "users",
+    "opcoes": [
+      { "id": "tecnicos", "nome": "Técnicos", "icon": "users" },
+      { "id": "painel-acomp-tecnicos", "nome": "Painel de Acompanhamento de Técnicos", "icon": "chart" },
+      { "id": "localizacao-tecnicos", "nome": "Localização de Técnicos no Mapa", "icon": "activity" },
+      { "id": "painel-conversas-chat", "nome": "Painel de Conversas via Chat", "icon": "activity" },
+      { "id": "painel-planejamento-roteirizacao", "nome": "Painel de Planejamento de Roteirização", "icon": "file" },
+      { "id": "painel-planejamento-capacidade", "nome": "Painel de Planejamento de Capacidade", "icon": "file" },
+      { "id": "painel-gestao-operacional", "nome": "Painel de Gestão Operacional", "icon": "chart" },
+      { "id": "servicos", "nome": "Serviços", "icon": "file" },
+      { "id": "criar-os", "nome": "Criar Ordem de Serviços", "icon": "file" },
+      { "id": "painel-servicos", "nome": "Painel de Serviços", "icon": "chart" },
+      { "id": "timeline-servicos", "nome": "Timeline de Serviços", "icon": "activity" },
+      { "id": "importar-os", "nome": "Importar Ordens de Serviço", "icon": "file" },
+      { "id": "exclusao-os", "nome": "Exclusão de Ordens de Serviços", "icon": "file" },
+      { "id": "reprocessar-os-reincidentes", "nome": "Reprocessar Ordem de Serviços Reincidentes", "icon": "file" },
+      { "id": "painel-produtividade", "nome": "Painel de Produtividade", "icon": "chart" }
+    ]
+  },
+  {
+    "id": "gestao-conexoes",
+    "nome": "Gestão de Conexões",
+    "icon": "activity",
+    "opcoes": [
+      { "id": "cadastro-tecnologia", "nome": "Cadastro de Tecnologia", "icon": "file" },
+      { "id": "cadastro-pop", "nome": "Cadastro de POP", "icon": "file" },
+      { "id": "cadastro-olt", "nome": "Cadastro de OLT", "icon": "file" },
+      { "id": "cadastro-pon", "nome": "Cadastro de PON", "icon": "file" },
+      { "id": "cadastro-slot", "nome": "Cadastro de Slot", "icon": "file" },
+      { "id": "cadastro-concentradora", "nome": "Cadastro de Concentradora", "icon": "file" },
+      { "id": "cadastro-servidor-radius", "nome": "Cadastro de Servidor Radius", "icon": "file" },
+      { "id": "cadastro-pool-ip", "nome": "Cadastro de Pool de IP", "icon": "file" },
+      { "id": "cadastro-login", "nome": "Cadastro de Login", "icon": "file" },
+      { "id": "cadastro-perfil-ativacao", "nome": "Cadastro de Perfil de Ativação", "icon": "file" },
+      { "id": "cadastro-atributos-ipoe", "nome": "Cadastro de Atributos IPOE", "icon": "file" },
+      { "id": "estrutura-rede-fibra", "nome": "Estrutura de Rede Fibra Óptica", "icon": "chart" },
+      { "id": "listagem-ips", "nome": "Listagem de IP's", "icon": "chart" },
+      { "id": "listagem-onu", "nome": "Listagem de ONU", "icon": "chart" },
+      { "id": "autorizar-onu", "nome": "Autorizar ONU", "icon": "activity" },
+      { "id": "config-exec-servico-olt", "nome": "Configurar Execução de Serviço OLT", "icon": "file" },
+      { "id": "painel-diagnosticos", "nome": "Painel de Diagnósticos", "icon": "chart" },
+      { "id": "painel-historico-login-radius", "nome": "Painel de Histórico de Autenticações de Login Radius", "icon": "chart" },
+      { "id": "config-conexao-cliente-plano", "nome": "Configurar Conexão por Cliente/Plano", "icon": "file" },
+      { "id": "logs-provisionamento", "nome": "Logs de Provisionamento", "icon": "file" },
+      { "id": "cadastro-franquia", "nome": "Cadastro de Franquia", "icon": "file" },
+      { "id": "cadastro-rotas", "nome": "Cadastro de Rotas", "icon": "file" },
+      { "id": "cadastrar-did", "nome": "Cadastrar DID", "icon": "file" },
+      { "id": "circuitos", "nome": "Circuitos", "icon": "chart" }
+    ]
+  },
+  {
+    "id": "financeiro",
+    "nome": "Financeiro",
+    "icon": "chart",
+    "opcoes": [
+      { "id": "movimentacoes-financeiras", "nome": "Movimentações Financeiras", "icon": "chart" },
+      { "id": "faturamento", "nome": "Faturamento", "icon": "chart" },
+      { "id": "frente-loja", "nome": "Frente de Loja", "icon": "users" }
+    ]
+  },
+  {
+    "id": "geography",
+    "nome": "Geography",
+    "icon": "chart",
+    "opcoes": [
+      { "id": "cadastro-manutencoes-rede", "nome": "Cadastro de Manutenções de Rede", "icon": "file" },
+      { "id": "cadastro-elementos-rede", "nome": "Cadastro de Elementos de Rede", "icon": "file" },
+      { "id": "cadastro-tipos-elementos", "nome": "Cadastro de Tipos de Elementos de Rede", "icon": "file" },
+      { "id": "cadastro-modelos-elemento", "nome": "Cadastro de Modelos de Elemento de Rede", "icon": "file" },
+      { "id": "consulta-portas-disponiveis", "nome": "Consulta de Portas Disponíveis", "icon": "chart" },
+      { "id": "cadastro-area-cobertura", "nome": "Cadastro de Area de Cobertura", "icon": "file" },
+      { "id": "mapa-gestao-rede", "nome": "Mapa de Gestão de Rede", "icon": "chart" },
+      { "id": "mapa-analise-comercial", "nome": "Mapa de Análise Comercial", "icon": "chart" }
+    ]
+  },
+  {
+    "id": "configuracoes",
+    "nome": "Configurações",
+    "icon": "users",
+    "opcoes": [
+      { "id": "usuarios", "nome": "Usuários", "icon": "users" },
+      { "id": "areas-acesso", "nome": "Áreas de Acesso", "icon": "file" },
+      { "id": "funcionarios", "nome": "Funcionários", "icon": "users" },
+      { "id": "empresa", "nome": "Empresa", "icon": "file" },
+      { "id": "filial", "nome": "Filial", "icon": "file" },
+      { "id": "contrato", "nome": "Contrato", "icon": "file" },
+      { "id": "projeto", "nome": "Projeto", "icon": "file" },
+      { "id": "grupo-area", "nome": "Grupo Área", "icon": "file" },
+      { "id": "area", "nome": "Área", "icon": "file" },
+      { "id": "localidade", "nome": "Localidade", "icon": "file" }
+    ]
+  },
+  {
+    "id": "logistica",
+    "nome": "Logística",
+    "icon": "activity",
+    "opcoes": [
+      { "id": "materiais", "nome": "Materiais", "icon": "file" },
+      { "id": "requisicoes", "nome": "Requisições", "icon": "file" },
+      { "id": "devolucoes", "nome": "Devoluções", "icon": "file" }
+    ]
+  }
+]
