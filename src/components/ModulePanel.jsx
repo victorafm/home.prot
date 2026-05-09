@@ -2,6 +2,7 @@ import React from "react";
 import { useStore } from "../store";
 import TableMock from "./TableMock";
 import { FaCubes } from "react-icons/fa";
+import CadastroVenda from "../pages/comercial/CadastroVenda"; // 👈 novo import
 
 export default function ModulePanel() {
   const activeTabId = useStore((s) => s.activeTabId);
@@ -17,7 +18,6 @@ export default function ModulePanel() {
   }
 
   // ---------- FILTRAGEM DE ABAS ----------
-  // Se estiver em visão modular, só pega abas do módulo selecionado
   const filteredTabs = showAllTabs
     ? tabs
     : tabs.filter(
@@ -30,6 +30,14 @@ export default function ModulePanel() {
   if (!tab) return <div>Nenhuma aba ativa</div>;
 
   const module = modules.find((m) => m.id === tab.moduleId);
+
+  // ---------- ABA DINÂMICA (sem estar no JSON) ----------
+  if (tab.option?.isDynamic) {
+    if (tab.option.nome === "Cadastro de Venda") {
+      return <CadastroVenda />; // 👈 renderiza a página específica
+    }
+    return <div>Página dinâmica não mapeada</div>;
+  }
 
   // ---------- MODULE TAB ----------
   if (tab.type === "module") {
@@ -59,24 +67,47 @@ export default function ModulePanel() {
   // ---------- OPTION TAB ----------
   if (tab.type === "option") {
     const option = module.opcoes.find((o) => o.id === tab.optionId);
+
     return (
       <div className="p-6">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <div>
             <h2 className="text-2xl font-bold">{option.nome}</h2>
-            <div className="text-sm text-gray-500">
-              {module.nome} • {option.nome}
-            </div>
+<div className="flex items-center justify-between mb-6">
+  <div>
+    <h2 className="text-2xl font-bold">{option?.nome || 'Carregando...'}</h2>
+    {module?.nome && option?.nome && (
+      <div className="text-sm text-gray-500">
+        {module.nome} • {option.nome}
+      </div>
+    )}
+  </div>
+</div>
+
           </div>
-          <div>
-            <button className="px-4 py-2 rounded bg-anielBlue text-white hover:bg-blue-700 transition">
+
+          {/* Botão “+ Novo” só no Painel de Vendas */}
+          {option.id === "painel-vendas" && (
+            <button
+              className="px-4 py-2 rounded bg-anielBlue text-white hover:bg-blue-700 transition"
+              onClick={() => {
+                // Cria uma tab dinâmica (não está no JSON)
+                openOptionTab(module.id, {
+                  id: `cadastro-venda-${Date.now()}`, // id único
+                  nome: "Cadastro de Venda",
+                  icon: "file",
+                  isDynamic: true, // flag para diferenciar
+                  type: "dynamic",
+                });
+              }}
+            >
               + Novo
             </button>
-          </div>
+          )}
         </div>
 
-        {/* Cards de exemplo */}
+        {/* Conteúdo padrão do Painel */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
           <div className="bg-white p-6 rounded shadow">
             <div className="font-semibold mb-1">Card de Exemplo</div>

@@ -24,6 +24,7 @@
       { "id": "painel-acomp-etapas", "nome": "Painel de Acompanhamento de Etapas de Venda", "icon": "chart" },
       { "id": "alteracao-plano-contrato", "nome": "Alteração de Plano no Contrato", "icon": "file" },
       { "id": "troca-titularidade", "nome": "Troca de Titularidade", "icon": "file" }
+      
     ]
   },
   {
